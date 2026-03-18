@@ -1,18 +1,29 @@
 # EXPT.NO-2-IMPLEMENTATION-OF-DISTANCE-VECTOR-ROUTING-PROTOCOL-RIP
 # AIM:
-
 To connect computers in multiple networks using Distance Vector Routing Protocol and to verify the connectivity between computers.
 # EQUIPMENTS REQUIRED:
-
-
+ PC With Cisco Packet Tracer
 
 # IP ASSIGNMENT:
-
+| NAME     | IP ADDRESS      | SUBNET MASK     | NETWORK       | CLASS | GATEWAY         |
+|----------|------------------|------------------|---------------|-------|------------------|
+| PC0      | 192.168.0.1      | 255.255.255.0    | 192.168.0.0   | C     | 192.168.0.200    |
+| PC1      | 192.168.0.2      | 255.255.255.0    | 192.168.0.0   | C     | 192.168.0.200    |
+| PC2      | 192.168.1.1      | 255.255.255.0    | 192.168.1.0   | C     | 192.168.1.200    |
+| PC3      | 192.168.1.2      | 255.255.255.0    | 192.168.1.0   | C     | 192.168.1.200    |
+| PC4      | 192.168.2.1      | 255.255.255.0    | 192.168.2.0   | C     | 192.168.2.200    |
+| PC5      | 192.168.2.2      | 255.255.255.0    | 192.168.2.0   | C     | 192.168.2.200    |
+| ROUTER0  | 192.168.0.200    | 255.255.255.0    | 192.168.0.0   | C     | -                |
+| ROUTER0  | 192.168.1.200    | 255.255.255.0    | 192.168.1.0   | C     | -                |
+| ROUTER1  | 192.168.1.201    | 255.255.255.0    | 192.168.1.0   | C     | -                |
+| ROUTER1  | 192.168.2.200    | 255.255.255.0    | 192.168.2.0   | C     | -                |
 
 
 # NETWORK DIAGRAM:
-# PROCEDURE:
+<img width="1280" height="723" alt="image" src="https://github.com/user-attachments/assets/4bdb3b08-650c-46d9-bda8-60d08763dea8" />
 
+# PROCEDURE:
+```
 STEP 1: Open a Packet Tracer Software.
 STEP 2: Drag two 2900 Switches, two Cisco 1800 Routers, four PC Terminals from tool barand drop it in work area.
 STEP 3: Connect all the PC Terminals and Routers through Switches as shown in the networkdiagram using CAT 6 Patch cables.
@@ -29,7 +40,7 @@ o PC2: 192.168.2.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.2.1
 o PC3: 192.168.3.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.3.1
 o PC4: 192.168.4.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
 o PC5: 192.168.4.3, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
- 
+ ```
 # PROGRAM
 
 Router0 Configuration Steps
@@ -79,9 +90,11 @@ You can also check connectivity between the PCs on different networks to ensure 
 •	Similarly, you can ping between other PCs (e.g., from PC2 to PC5) to verify network connective
  
 # OUTPUT
+<img width="1050" height="1072" alt="image" src="https://github.com/user-attachments/assets/172d39c1-6920-44ed-8539-1390e9fb5dc5" />
 
+<img width="1039" height="1062" alt="image" src="https://github.com/user-attachments/assets/0d07e57b-d82e-436f-9414-0387f675d25f" />
 
 
 # RESULT:
 
-Thus the computers in multiple networks using Distance Vector Routing <img width="576" height="365" alt="image" src="https://github.com/user-attachments/assets/f4245c26-a2f8-4621-b317-0a2c8049f764" />
+Thus the computers in multiple networks using Distance Vector Routing is successfully achieved.
